@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BEC87FD42416C80000360776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC87FD32416C80000360776 /* AppDelegate.swift */; };
 		BEC87FD62416C80000360776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC87FD52416C80000360776 /* SceneDelegate.swift */; };
-		BEC87FD82416C80000360776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC87FD72416C80000360776 /* ViewController.swift */; };
+		BEC87FD82416C80000360776 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC87FD72416C80000360776 /* LocationListViewController.swift */; };
 		BEC87FDB2416C80000360776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC87FD92416C80000360776 /* Main.storyboard */; };
 		BEC87FDD2416C80300360776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC87FDC2416C80300360776 /* Assets.xcassets */; };
 		BEC87FE02416C80300360776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC87FDE2416C80300360776 /* LaunchScreen.storyboard */; };
+		BEC87FE82416C84700360776 /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC87FE72416C84700360776 /* WeatherLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEC87FD02416C80000360776 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC87FD32416C80000360776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC87FD52416C80000360776 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEC87FD72416C80000360776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEC87FD72416C80000360776 /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 		BEC87FDA2416C80000360776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEC87FDC2416C80300360776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC87FDF2416C80300360776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC87FE12416C80300360776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC87FE72416C84700360776 /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				BEC87FD32416C80000360776 /* AppDelegate.swift */,
 				BEC87FD52416C80000360776 /* SceneDelegate.swift */,
-				BEC87FD72416C80000360776 /* ViewController.swift */,
+				BEC87FD72416C80000360776 /* LocationListViewController.swift */,
+				BEC87FE72416C84700360776 /* WeatherLocation.swift */,
 				BEC87FD92416C80000360776 /* Main.storyboard */,
 				BEC87FDC2416C80300360776 /* Assets.xcassets */,
 				BEC87FDE2416C80300360776 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC87FD82416C80000360776 /* ViewController.swift in Sources */,
+				BEC87FD82416C80000360776 /* LocationListViewController.swift in Sources */,
+				BEC87FE82416C84700360776 /* WeatherLocation.swift in Sources */,
 				BEC87FD42416C80000360776 /* AppDelegate.swift in Sources */,
 				BEC87FD62416C80000360776 /* SceneDelegate.swift in Sources */,
 			);
