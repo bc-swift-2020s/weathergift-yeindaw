@@ -49,19 +49,19 @@ class LocationDetailViewController: UIViewController {
     func updateUserInterface(){
         let pageViewController = UIApplication.shared.windows.first!.rootViewController as! PageViewController
         let weatherLocation = pageViewController.weatherLocations[locationIndex]
-        let weatherDetail = WeatherDetail(name: weatherLocation.name, latitude: weatherLocation.latitude, longitude: weatherLocation.longitude)
+        weatherDetail = WeatherDetail(name: weatherLocation.name, latitude: weatherLocation.latitude, longitude: weatherLocation.longitude)
         
         pageControl.numberOfPages = pageViewController.weatherLocations.count
         pageControl.currentPage = locationIndex
         weatherDetail.getData{
             DispatchQueue.main.async {
-                dateFormatter.timeZone = TimeZone(identifier: weatherDetail.timezone)
-                let usableDate = Date(timeIntervalSince1970: weatherDetail.currentTime)
+                dateFormatter.timeZone = TimeZone(identifier: self.weatherDetail.timezone)
+                let usableDate = Date(timeIntervalSince1970: self.weatherDetail.currentTime)
                 self.dateLabel.text = dateFormatter.string(from: usableDate)
                 self.placeLabel.text = weatherLocation.name
-                self.temperatureLabel.text = "\(weatherDetail.temperature)°"
-                self.summaryLabel.text = "\(weatherDetail.summary)"
-                self.imageView.image = UIImage(named: weatherDetail.dailyIcon)
+                self.temperatureLabel.text = "\(self.weatherDetail.temperature)°"
+                self.summaryLabel.text = "\(self.weatherDetail.summary)"
+                self.imageView.image = UIImage(named: self.weatherDetail.dailyIcon)
                 self.tableView.reloadData()
             }
         }

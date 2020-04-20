@@ -17,7 +17,7 @@ class LocationListViewController: UIViewController {
     
     var weatherLocations: [WeatherLocation] = []
     var selectedLocationIndex = 0
-    
+    var cool = 3
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
